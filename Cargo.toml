@@ -3,7 +3,7 @@
 # =============================================================================
 [package]
 name    = "match-lang"
-version = "0.1.0"
+version = "0.2.0"
 
 # Minimum Supported Rust Version (MSRV)
 rust-version = "1.85"
@@ -16,7 +16,7 @@ license = "Apache-2.0 OR MIT"
 readme = "README.md"
 
 # Description
-description = "Pattern-match compilation to decision trees with exhaustiveness and usefulness checking."
+description = "Exhaustiveness and usefulness checking for pattern matching, generic over a language's constructors."
 
 # Keywords (5 max)
 keywords = ["pattern-matching", "exhaustiveness", "compiler", "decision-tree", "lexersketch"]
@@ -45,13 +45,15 @@ path = "src/lib.rs"
 # #################################
 [features]
 default = ["std"]
+# The standard library. Nothing beyond `alloc` is used; without it the crate is `no_std`.
 std = []
 
 
 # DEPENDENCIES
 # #################################
 [dependencies]
-# First-party -lang dependencies are wired at v0.2.0, when first used.
+# None. The algorithm needs only `alloc`; languages plug in through the
+# `Model` trait, so no first-party crate is a dependency (see dev/ROADMAP.md).
 
 
 # DEV DEPENDENCIES
