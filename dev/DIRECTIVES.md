@@ -15,7 +15,7 @@ This library is built and maintained to a production standard and treated as a f
 
 match-lang owns pattern matrices, decision-tree construction with sharing, and exhaustiveness/usefulness analysis over an abstract constructor model (sums, records, tuples, literals, ranges, slices, or-patterns, guards). It does not type-check or evaluate.
 
-Kraken, Iron, Mercury, and functional languages all need correct, fast matching and precise missing-case diagnostics; this is the one implementation they share.
+Iron, Mercury, and functional languages all need correct, fast matching and precise missing-case diagnostics; this is the one implementation they share.
 
 ---
 
