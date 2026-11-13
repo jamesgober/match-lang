@@ -19,7 +19,7 @@ readme = "README.md"
 description = "Exhaustiveness and usefulness checking for pattern matching, generic over a language's constructors."
 
 # Keywords (5 max)
-keywords = ["pattern-matching", "exhaustiveness", "compiler", "decision-tree", "lexersketch"]
+keywords = ["pattern-matching", "exhaustiveness", "compiler", "decision-tree"]
 
 # Categories
 categories = ["compilers", "algorithms", "no-std"]
